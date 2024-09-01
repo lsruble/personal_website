@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Name - robruble</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <style>
+        .project-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+        }
+        .project-info div {
+            flex: 1;
+        }
+        .project-description img {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Traffic Sign Recognition</h1>
+        <nav style="display: flex; gap: 20px;">
+            <a href="../index.html">Home</a>
+            <a href="../projects.html">Projects</a>
+        </nav>
+    </header>
+    <main>
+        <section class="project-info">
+            <div>
+                <h2>Duration</h2>
+                <p>February 2024 - July 2024</p>
+            </div>
+            <div>
+                <h2>Location</h2>
+                <p>Université de Technologie de Compiègne</p>
+            </div>
+        </section>
+        <section class="project-description">
+            <h2>Description</h2>
+            <p> This project focused on developing an efficient system for automatic traffic sign detection, combining classical computer vision methods with machine learning techniques. The team successfully created a robust algorithm capable of identifying various types of road signs and traffic lights.
+                The approach involved innovative data preprocessing, expanding the initial dataset from 800 to 2300 signs through clever augmentation techniques. For classification, the team utilized Histogram of Oriented Gradients (HOG) features, achieving high accuracy with SVM classifiers. The detection phase combined the MSER algorithm with a custom binary processing method, resulting in effective sign localization.</p>
+            <img src="images/SY32_1.jpg" alt="Project Image 2" width="600" height="400">
+            <p>Results were impressive, with the system achieving up to 94.49% precision at a high confidence threshold. Notably, the algorithm demonstrated near real-time processing capabilities, analyzing about one image per second even on low-power hardware. This performance suggests potential applications in embedded systems and mobile devices.
+                The project stood out, earning the highest marks in the course. While excelling in many areas, the team identified opportunities for future improvements, particularly in traffic light detection and performance under high-brightness conditions.
+                Overall, this project showcased a successful fusion of classical computer vision and machine learning approaches, resulting in a robust and efficient traffic sign detection system with real-world potential.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 robruble</p>
+    </footer>
+</body>
+</html>
