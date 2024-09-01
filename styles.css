@@ -1,0 +1,142 @@
+body {
+    font-family: 'Space Mono', monospace;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    padding: 2rem;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+main {
+    flex-grow: 1;
+    padding: 2rem;
+}
+
+.resume-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resume-content {
+    max-width: 800px;
+    width: 100%;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.resume-viewer {
+    max-width: 800px;
+    width: 100%;
+}
+
+.download-button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.gif-right {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 550px; /* Ajustez la taille si nécessaire */
+    height: auto;
+}
