@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Name - robruble</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <style>
+        .project-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+        }
+        .project-info div {
+            flex: 1;
+        }
+        .project-description img {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Traffic Sign Recognition</h1>
+        <nav style="display: flex; gap: 20px;">
+            <a href="../index.html">Home</a>
+            <a href="../projects.html">Projects</a>
+        </nav>
+    </header>
+    <main>
+        <section class="project-info">
+            <div>
+                <h2>Duration</h2>
+                <p>January 2022 - April 2022</p>
+            </div>
+            <div>
+                <h2>Location</h2>
+                <p>IUT de Cachan</p>
+            </div>
+        </section>
+        <section class="project-description">
+            <h2>Description</h2>
+            <p>
+                This project implements a <b>real-time 2D mapping system</b> using <b>LIDAR</b> (Light Detection and Ranging) technology, designed to create an accurate representation of its surroundings by measuring distances and angles to nearby objects. Built on the <b>LPC1768 microcontroller</b> platform, the system offers <b>real-time data processing</b>, 
+                <b>2D visualization</b> on a <b>Graphic LCD screen</b>, <b>high-speed UART communication</b> for rapid data transfer, and efficient data handling through algorithms for filtering, angle and distance calculations, and averaging. The system utilizes an LPC1768 microcontroller, a Graphic LCD for visualization, and a LIDAR sensor capable of <b>360-degree scanning</b>.</p>
+                <img src="images/lidar_map.jpg" alt="Project Image 2" width="300" height="200">
+            <p>
+                It can process <b>400 data points per scan</b>, has an effective mapping range of up to <b>6 meters</b>, and displays results with a <b>5-degree angular resolution</b>. This versatile system has numerous applications, including <b>robotics</b> for autonomous navigation, <b>smart home mapping</b> for automation and security, <b>industrial automation</b> for factory floor mapping and AGVs, <b>security systems</b> for area monitoring, and <b>educational purposes</b> for demonstrating LIDAR technology principles. The <b>modular design</b> allows for future enhancements such as integration with advanced mapping algorithms, <b>3D mapping capabilities</b>, <b>wireless data transmission</b>, and <b>machine learning integration</b> for object recognition. Whether for technical applications requiring environmental awareness or educational demonstrations, this LIDAR-based 2D mapping system offers a <b>powerful and flexible solution</b> for real-time spatial mapping and analysis.
+                </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 robruble</p>
+    </footer>
+</body>
+</html>
