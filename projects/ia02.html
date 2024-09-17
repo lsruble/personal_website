@@ -24,7 +24,7 @@
 </head>
 <body>
     <header>
-        <h1>Deep Learning for VR and Empathy</h1>
+        <h1>Monte Carlo Tree Search for Gopher</h1>
         <nav style="display: flex; gap: 20px;">
             <a href="../index.html">Home</a>
             <a href="../projects.html">Projects</a>
@@ -38,15 +38,39 @@
             </div>
             <div>
                 <h2>Location</h2>
-                <p>UTC</p>
+                <p>Université de Technologie de Compiègne</p>
             </div>
         </section>
         <section class="project-description">
             <h2>Description</h2>
-            <p> This project explores the intersection of virtual reality (VR) and emotion recognition, focusing on the challenges posed by facial occlusions when users wear VR headsets. We developed an augmented reality (AR) algorithm that overlays a virtual VR headset onto faces, allowing us to simulate the conditions of VR usage in datasets. Using facial landmarks and real-time transformations, the algorithm accurately positions and scales the headset, creating a realistic simulation.</p>
-            <img src="images/TX_1.png" alt="Project Image 2" width="600" height="400">
-            <p>We then applied this AR technique to a dataset, training a simple model to recognize emotions from faces partially obscured by a VR headset. The results, however, revealed limitations in emotion detection due to the occlusion of key facial regions, such as the eyes and eyebrows, which are crucial for recognizing certain emotions like anger. Despite achieving a 67% accuracy rate during training, the model struggled with real-world scenarios, reflecting the complexity of emotion recognition in VR.
-                To address these challenges, we propose integrating additional data from eye-tracking and head position analysis, which could enhance the model's ability to interpret emotions even when facial features are obscured. This multimodal approach aims to provide a more comprehensive understanding of the user's emotional state in VR environments, paving the way for more immersive and emotionally responsive VR experiences.</p>
+
+  <p>Gopher is a strategy game where two players compete on a grid, aiming to capture as many cells as possible. Players move in four directions (up, down, left, right) to control territory while trying to block their opponent’s moves. The goal is to capture the most cells and restrict the opponent's movement.
+    In this project, I developed a <strong>Monte Carlo Tree Search (MCTS)</strong> strategy for the Gopher game. The algorithm was built from scratch and incorporates dynamic simulations, filtering of non-promising moves, and reusing evaluations of previously explored positions.</p>
+  <figure>
+    <img src="images/gopher2.gif" alt="MCTS Algorithm Visualization" style="width:100%; max-width:600px;">
+  </figure>
+  <h3>Key Features</h3>
+  <ul>
+    <li><strong>Dynamic Simulations:</strong> The number of simulations increases as the game progresses to explore more deeply in later stages. This is controlled by the formula: 
+      <code>nb_simulations = 1 + int(80 * calculer_prop_plateau(grid))</code></li>
+    <li><strong>Move Filtering:</strong> Only "promising" moves are explored to reduce unnecessary simulations and focus on potential winning strategies.</li>
+    <li><strong>Reusing Previous Evaluations:</strong> A dictionary stores cumulative scores and the number of simulations, avoiding recalculating known positions.</li>
+    <li><strong>Early Simulation Termination:</strong> Simulations stop if a clearly bad move is detected, saving computation time.</li>
+    <li><strong>Upper Confidence Bound (UCT) Formula:</strong> The algorithm balances exploration and exploitation using the UCT formula with an exploration coefficient of sqrt(2).</li>
+  </ul>
+
+  <h3>Results</h3>
+  <p>The algorithm achieved <strong>2 wins and 2 losses</strong> in a tournament. Key areas for improvement include time management, opening strategies, and better resource allocation in simulations.</p>
+
+  <h3>Future Improvements</h3>
+  <ul>
+    <li>Optimize for different time constraints (e.g., 10s, 1min).</li>
+    <li>Refine the opening strategy to avoid quick defeats.</li>
+    <li>Implement logarithmic growth for simulations to enhance performance.</li>
+  </ul>
+
+  <h3>Resources</h3>
+  <p>Course materials from IA02 and Gopher Ludii AI were used during development.</p>
         </section>
     </main>
     <footer>
