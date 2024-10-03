@@ -140,3 +140,10 @@ footer {
     width: 550px; /* Ajustez la taille si nécessaire */
     height: auto;
 }
+
+.technologies {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: #555;
+    text-align: center;
+}
