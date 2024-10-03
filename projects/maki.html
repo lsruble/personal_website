@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maki Robot</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <style>
+        .project-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+        }
+        .project-info div {
+            flex: 1;
+        }
+        .project-description img {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Maki Robot</h1>
+        <nav style="display: flex; gap: 20px;">
+            <a href="../index.html">Home</a>
+            <a href="../projects.html">Projects</a>
+        </nav>
+    </header>
+    <main>
+        <section class="project-info">
+            <div>
+                <h2>Duration</h2>
+                <p>September 2021 - January 2022</p>
+            </div>
+            <div>
+                <h2>Location</h2>
+                <p>IUT de Cachan</p>
+            </div>
+        </section>
+        <section class="project-description">
+            <h2>Description</h2>
+            <img src="images/robot_maki_1.jpg" alt="Robot Maki Image" width="400" height="250">
+    
+            <p>The <strong>Robot Maki</strong> project was designed to assist <strong>autistic children</strong> in recognizing and expressing their emotions. Our team created a robot capable of displaying <strong>facial expressions</strong> based on the emotions detected from the child's face, using an <strong>emotion recognition algorithm</strong> integrated into a <strong>Raspberry Pi</strong>. The goal was to make the learning process of emotional recognition easier for these children through an interactive and engaging <strong>humanoid robot</strong>.</p>
+            <p>This was my first experience working with <strong>humanoid robotics</strong>, and I was responsible for the software part of the project. I thoroughly enjoyed this experience, particularly learning how to develop <strong>AI</strong> and robotics systems that could interact with humans in such a meaningful way. It was fascinating to see how technology could be used to support children with special needs. The project introduced me to <strong>real-time emotion recognition</strong> and <strong>robotic motor control</strong>, both of which I found incredibly exciting.</p>
+            <img src="images/robot_maki.jpg" alt="Robot Maki Image" width="600" height="400">
+    
+            <p>The core software solution involved integrating the <strong>PiCamera</strong> with the Raspberry Pi to capture and analyze facial expressions using <strong>OpenCV</strong>. A <strong>convolutional neural network (CNN)</strong> was employed to detect emotions and control the <strong>stepper motors</strong> that animated the robot's face. I was also in charge of managing all the communications between the <strong>embedded system</strong>, the camera, and the motors. This included handling the <strong>GPIO pins</strong> of the Raspberry Pi to ensure smooth coordination between <strong>image recognition</strong> and the motor movements required to express emotions.</p>
+            <p>In addition to the emotion recognition software, I worked on optimizing the <strong>communication protocols</strong> to maintain real-time interactions between the camera and motors. Ensuring that the motors responded in sync with the emotions detected by the PiCamera required precise timing and efficient use of the Raspberry Pi’s computational resources.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; louis ruble</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Detection Project</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <style>
+        .project-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+        }
+        .project-info div {
+            flex: 1;
+        }
+        .project-description img {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+        }
+        /* CSS for images side by side */
+        .image-row {
+            display: flex;
+            gap: 20px; /* Space between images */
+        }
+        .image-row img {
+            width: 50%; /* Each image takes 50% of the container width */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Object Detection Project</h1>
+        <nav style="display: flex; gap: 20px;">
+            <a href="../index.html">Home</a>
+            <a href="../projects.html">Projects</a>
+        </nav>
+    </header>
+    <main>
+        <section class="project-info">
+            <div>
+                <h2>Duration</h2>
+                <p>February 2023 - July 2023</p>
+            </div>
+            <div>
+                <h2>Location</h2>
+                <p>Université de Technologie de Compiègne</p>
+            </div>
+        </section>
+        <section class="project-description">
+            <h2>Description</h2>
+            <p>During my Intelligent Sensors course at UTC, I worked on an exciting project involving <b>object detection</b> using a Turtlebot robot. The project aimed to identify various objects like colored sheets, mirrors, glass panels, and road signs using multiple sensors. We utilized a camera for <b>color detection and area calculation</b>, an ultrasonic sensor for distance measurement, and a <b>LIDAR</b> for texture analysis and distance comparison.</p>
+            <img src="images/sy31.png" alt="Project Image 2" width="300" height="200">
+
+            <p>    The challenge was to integrate data from these sensors to accurately classify objects. We developed algorithms to process sensor data, including HSV color masking, distance-based size estimation, and intensity-based texture recognition. The project involved creating <b>ROS</b> nodes for each sensor and a central processing node to combine all information. This hands-on experience enhanced my skills in <b>sensor fusion</b>, <b>computer vision</b>, and robotics programming, providing valuable insights into real-world applications of intelligent sensing systems.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Object Detection Team</p>
+    </footer>
+</body>
+</html>

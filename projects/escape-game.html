@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Game - louis ruble</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <style>
+        .project-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+        }
+        .project-info div {
+            flex: 1;
+        }
+        .project-description img {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Escape Game -  Digital Safe </h1>
+        <nav style="display: flex; gap: 20px;">
+            <a href="../index.html">Home</a>
+            <a href="../projects.html">Projects</a>
+        </nav>
+    </header>
+    <main>
+        <section class="project-info">
+            <div>
+                <h2>Duration</h2>
+                <p>February 2021 - July 2021</p>
+            </div>
+            <div>
+                <h2>Location</h2>
+                <p>IUT de Cachan</p>
+            </div>
+        </section>
+        <section class="project-description">
+            <h2>Description</h2>
+            <p>As part of my studies in <strong>Electrical Engineering</strong> and <strong>Industrial Computing</strong>, I developed a digital safe puzzle for an <strong>Escape Room</strong> experience. My primary focus was on programming and <strong>electronics</strong> for this interactive element.
+            I used <strong>C++</strong> on an <strong>Mbed microcontroller</strong> to bring the safe to life. The programming involved creating a <strong>state machine</strong> to control the safe's overall functionality. I implemented handlers for the <strong>rotary encoder</strong> input and button confirmation. A clever audio feedback system was programmed to guide players towards the correct combination. Additionally, I integrated control systems for an <strong>electromagnetic lock</strong> and <strong>mechanical actuator</strong> to physically open the safe upon successful code entry.</p>
+            <img src="images/escape_game_2.jpg" alt="Project Image 2" width="300" height="150">
+            <p>My role extended to designing and building a custom <strong>circuit board</strong> for the safe. The board interfaced with various inputs including a <strong>32-position rotary encoder</strong> and a confirmation button. Outputs included a <strong>buzzer</strong> for audio feedback, an electromagnetic lock, and a mechanical actuator. The circuit incorporated <strong>voltage regulation</strong>, signal conditioning, and <strong>PWM-based motor control circuits</strong>. I personally soldered and tested the final board to ensure its functionality.
+            The safe utilized a <strong>three-digit combination</strong> system with automatic reset on incorrect entries. A subtle audio cue system using a buzzer indicated proximity to correct digits, adding an engaging element to the puzzle. I designed the <strong>PCB layout</strong> using KiCad and had it manufactured. The entire system was integrated with a <strong>Programmable Logic Controller (PLC)</strong> for overall Escape Room management.</p>
+            <img src="images/escape_game_1.jpg" alt="Project Image 2" width="300" height="150">
+            <p>This project allowed me to apply and expand my skills in <strong>embedded programming</strong>, circuit design, <strong>PCB layout</strong>, and system integration. It provided valuable experience in <strong>hardware-software interfacing</strong> within a real-world application. The combination of software and hardware elements made this project particularly engaging and educational.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 louis ruble</p>
+    </footer>
+</body>
+</html>
